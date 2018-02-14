@@ -4,7 +4,7 @@
 #
 Name     : clr-systemd-config
 Version  : 149
-Release  : 177
+Release  : 178
 URL      : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-149.tar.bz2
 Source0  : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-149.tar.bz2
 Summary  : No detailed summary available
