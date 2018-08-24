@@ -4,7 +4,7 @@
 #
 Name     : clr-systemd-config
 Version  : 164
-Release  : 191
+Release  : 192
 URL      : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-164.tar.bz2
 Source0  : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-164.tar.bz2
 Summary  : No detailed summary available
