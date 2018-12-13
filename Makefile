@@ -1,5 +1,5 @@
 PKG_NAME := clr-systemd-config
-URL = $(CGIT_BASE_URL)/projects/clr-systemd-config/snapshot/clr-systemd-config-172.tar.bz2
+URL = $(CGIT_BASE_URL)/projects/clr-systemd-config/snapshot/clr-systemd-config-173.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
