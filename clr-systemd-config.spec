@@ -4,7 +4,7 @@
 #
 Name     : clr-systemd-config
 Version  : 182
-Release  : 206
+Release  : 207
 URL      : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-182.tar.xz
 Source0  : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-182.tar.xz
 Summary  : No detailed summary available
@@ -80,11 +80,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1557001632
-export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$CFLAGS -fno-lto "
-export FFLAGS="$CFLAGS -fno-lto "
-export CXXFLAGS="$CXXFLAGS -fno-lto "
+export SOURCE_DATE_EPOCH=1557123410
+export LDFLAGS="${LDFLAGS} -fno-lto"
 %reconfigure --disable-static
 make  %{?_smp_mflags}
 
@@ -96,7 +93,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1557001632
+export SOURCE_DATE_EPOCH=1557123410
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/clr-systemd-config
 cp LICENSE %{buildroot}/usr/share/package-licenses/clr-systemd-config/LICENSE
