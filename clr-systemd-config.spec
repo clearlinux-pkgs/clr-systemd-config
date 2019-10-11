@@ -4,7 +4,7 @@
 #
 Name     : clr-systemd-config
 Version  : 193
-Release  : 217
+Release  : 218
 URL      : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-193.tar.xz
 Source0  : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-193.tar.xz
 Summary  : No detailed summary available
