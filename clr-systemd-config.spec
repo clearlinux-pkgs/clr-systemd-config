@@ -4,10 +4,10 @@
 # Using build pattern: configure_ac
 #
 Name     : clr-systemd-config
-Version  : 205
-Release  : 230
-URL      : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-205.tar.xz
-Source0  : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-205.tar.xz
+Version  : 206
+Release  : 231
+URL      : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-206.tar.xz
+Source0  : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-206.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -90,15 +90,15 @@ services components for the clr-systemd-config package.
 
 
 %prep
-%setup -q -n clr-systemd-config-205
-cd %{_builddir}/clr-systemd-config-205
+%setup -q -n clr-systemd-config-206
+cd %{_builddir}/clr-systemd-config-206
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683238386
+export SOURCE_DATE_EPOCH=1683239861
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -115,7 +115,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1683238386
+export SOURCE_DATE_EPOCH=1683239861
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/clr-systemd-config
 cp %{_builddir}/clr-systemd-config-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/clr-systemd-config/01a6b4bf79aca9b556822601186afab86e8c4fbf || :
