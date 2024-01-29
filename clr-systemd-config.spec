@@ -7,7 +7,7 @@
 #
 Name     : clr-systemd-config
 Version  : 207
-Release  : 233
+Release  : 234
 URL      : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-207.tar.xz
 Source0  : http://localhost/cgit/projects/clr-systemd-config/snapshot/clr-systemd-config-207.tar.xz
 Summary  : No detailed summary available
